@@ -1,7 +1,7 @@
 @font-face {
     font-family: Px Grotesk;
-    src: url(./fonts/px-grotesk.ttf) format('truetype'),
-    url(./fonts/px-grotesk.woff) format('woff');
+    src: url(/fonts/px-grotesk.ttf) format('truetype'),
+    url(/fonts/px-grotesk.woff) format('woff');
 
 }
 
