@@ -1,6 +1,8 @@
 @font-face {
     font-family: Px Grotesk;
-    src: url(./fonts/px-grotesk.ttf) format('truetype');
+    src: url(./fonts/px-grotesk.ttf) format('truetype'),
+    url(./fonts/px-grotesk.woff) format('woff');
+
 }
 
 body {
@@ -10,6 +12,7 @@ body {
     color: #000;
     font-family: Px Grotesk;
     font-size: 16px;
+    outline:none;
 
     /* no text highlighting */
     -webkit-touch-callout: none; /* iOS Safari */
