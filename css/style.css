@@ -6,13 +6,10 @@
 }
 
 body {
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #fafafa;
-    color: #000;
+    background-color: #000;
+    color: #fafafa;
     font-family: Px Grotesk;
-    font-size: 16px;
-    outline:none;
+    font-size: 12px;
 
     /* no text highlighting */
     -webkit-touch-callout: none; /* iOS Safari */
@@ -24,14 +21,61 @@ body {
                         supported by Chrome, Edge, Opera and Firefox */
 }
 
+.orb {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
 #bio {
-    max-width: 45vw;
-    line-height: 27.5px;
+    width: 355px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.list {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    background-color: #000;
+    color: #fafafa;
+    border: none;
+    position: initial;
+    text-align: left;
+    outline: none; 
+    cursor: pointer;
+} 
+
+#bk-arw {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#bk-arw2 {
+    position: fixed;
+    left: -50px;
+}
+
+#btm-rt {
+    font-size: 40px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    transform: translateY(-20px);
 }
 
 ul {
     list-style: none;
     padding: 0px;
+    text-align: left;
 }
 
 li {
@@ -65,7 +109,7 @@ li {
 }
 
 a {
-    color: #000;
+    color: #fafafa;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -77,43 +121,26 @@ a {
 @keyframes myfirst
 {
     3%    {
-        color: #fafafa;
-        text-decoration-color: #fafafa;
-        background-color: #fafafa;
+        color: #000;
+        text-decoration-color: #000;
+        background-color: #000;
         }
 
     50%    {
-            color: #fafafa;
-            text-decoration-color: #fafafa;
-            background-color: #fafafa;
+            color: #000;
+            text-decoration-color: #000;
+            background-color: #000;
             }
 
     100%    {
-            color: #fafafa;
-            text-decoration-color: #fafafa;
-            background-color: #fafafa;
+            color: #000;
+            text-decoration-color: #000;
+            background-color: #000;
         }
 }
 
-#github {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 3px solid;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    display:table;
-    text-align: center;
-}
-
-#gitText {
-    font-size: 30px;
-    text-decoration: none;
-    vertical-align: middle;
-    display: table-cell;
+.displayState {
+    display: none;
 }
 
 .noUndies {
@@ -121,8 +148,17 @@ a {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
     #bio {
-        min-width: 100%;
+        width: 275px;
     }
+
+    #btm-rt {
+        font-size: 40px;
+        position: fixed;
+        left: 20px;
+        bottom: 10px;
+        transform: translateY(-10px);
+    }
+
   }

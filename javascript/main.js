@@ -36,4 +36,27 @@ $(document).ready(function() {
         }
       );
 
+      $("#bk-arw").click(function(){
+        $("#prm-text").toggle();
+        $("#sd-text").toggle();
+      });
+
+      $("#bk-arw2").click(function(){
+        $("#bk-arw2").toggle();
+        $(".list").toggle();
+        $(".content").toggle();
+      });
+
+      $("img").click(function(){
+        $("#bk-arw").toggle();
+        $("#prm-text").toggle();
+        $("#sd-text").toggle();
+      });
+
+      $("#btm-rt").click(function(){
+        $("#bk-arw2").toggle();
+        $(".list").toggle();
+        $(".content").toggle();
+      });
+
 });
