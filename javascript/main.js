@@ -37,6 +37,7 @@ $(document).ready(function() {
       );
 
       $("#bk-arw").click(function(){
+        $("#bk-arw").toggle();
         $("#prm-text").toggle();
         $("#sd-text").toggle();
       });
